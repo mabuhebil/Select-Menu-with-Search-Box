@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00b7ff;
+}
+
+.container {
+    width: 350px;
+    margin: 70px auto 0;
+    padding: 20px;
+}
+
+.container .selectBox {
+    background-color: #fff;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.container .selectBox span {
+    font-size: 21px;
+}
+
+.container .selectBox i {
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.container.active .selectBox i {
+    transform: rotate(-180deg);
+}
+
+.container .search {
+    display: none;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    user-select: none;
+}
+
+.container.active .search {
+    display: block;
+}
+
+
+.container .search .inputbox {
+    position: relative;
+}
+
+.container .search .inputbox input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+.container .search .inputbox i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    color: #9b9a9a;
+}
+
+.container .search .opations {
+    list-style: none;
+    margin-top: 15px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.opations::-webkit-scrollbar {
+    width: 7px;
+}
+
+.opations::-webkit-scrollbar-track {
+    background-color: #c7c5c5;
+    border-radius: 5px;
+}
+
+.opations::-webkit-scrollbar-thumb {
+    background-color: #9b9a9a;
+    border-radius: 5px;
+}
+
+.container .search .opations li {
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+.container .search .opations li:hover {
+    background-color: #c7c5c5;
+    border-radius: 5px;
+}
