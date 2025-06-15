@@ -47,6 +47,7 @@ body {
     border-radius: 5px;
     padding: 20px;
     user-select: none;
+    max-height: 500px;
 }
 
 .container.active .search {
@@ -109,7 +110,8 @@ body {
 
 }
 
-.container .search .opations li:hover {
+.container .search .opations li:hover,
+.opations li.selected {
     background-color: #c7c5c5;
     border-radius: 5px;
 }
